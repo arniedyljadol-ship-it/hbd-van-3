@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Van Accel! | Fev's Diner Invitation</title>
+  <!-- Google Fonts for Retro Diner Vibe -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Shrikhand&display=swap" rel="stylesheet">
+  <!-- Canvas Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Checkered Banner Bar -->
+  <div class="checker-banner"></div>
+
+  <main class="page-container">
+    <!-- Header / Hero Section -->
+    <header class="hero-card">
+      <div class="badge-tag">🚨 OFFICIAL SENIOR’S INNER CIRCLE SUMMONS 🚨</div>
+      <h1 class="main-title">HAPPY BELATED BIRTHDAY,<br><span class="highlight-name">VAN ACCEL!</span></h1>
+      <p class="subtitle">
+        Yes, we know we are <strong>one day late</strong>, but that’s only because you had prioritized plans with your girlfriend (priorities checked, we understand, sir! 🫡). 
+        Now, it’s <strong>Senior’s Inner Circle</strong>'s turn to feed you!
+      </p>
+    </header>
+
+    <!-- Invitation Details Box -->
+    <section class="card invite-details">
+      <h2 class="section-title">📍 The Mission Coordinates</h2>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="icon">🍔</span>
+          <div>
+            <strong>WHERE:</strong>
+            <p>Fev’s Diner</p>
+          </div>
+        </div>
+        <div class="detail-item">
+          <span class="icon">🗓️</span>
+          <div>
+            <strong>WHEN:</strong>
+            <p>This Wednesday @ 7:00 PM</p>
+          </div>
+        </div>
+        <div class="detail-item dress-code-item">
+          <span class="icon">👕</span>
+          <div>
+            <strong>DRESS CODE:</strong>
+            <p class="badge-highlight">Casual & Hungry</p>
+          </div>
+        </div>
+        <div class="detail-item">
+          <span class="icon">🎁</span>
+          <div>
+            <strong>ADMISSION:</strong>
+            <p>Your presence + your empty stomach</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Countdown -->
+      <div class="countdown-wrapper">
+        <span class="countdown-label">⏰ COUNTDOWN TO WEDNESDAY DINNER:</span>
+        <div id="countdown" class="countdown-timer">Calculating time...</div>
+      </div>
+    </section>
+
+    <!-- RSVP Section with Playful Buttons -->
+    <section class="card rsvp-card">
+      <h2 class="section-title">Can We Count You In, Van?</h2>
+      <p class="rsvp-subtext">Clicking anything other than YES is not legally permissible by Senior’s Inner Circle.</p>
+      
+      <div class="rsvp-actions">
+        <button id="yesBtn" class="btn btn-yes">
+          🎉 COUNT ME IN! I'LL BE THERE!
+        </button>
+        <button id="gfBtn" class="btn btn-gf">
+          🥺 Ask GF for permission first...
+        </button>
+      </div>
+      <div id="rsvpMessage" class="rsvp-message"></div>
+    </section>
+
+    <!-- Embedded Section 1: 10 Things to Describe Van Accel -->
+    <section class="card board-card">
+      <h2 class="section-title">🏷️ 10 Things to Describe Van Accel</h2>
+      <p class="section-desc">Testimonies from the Senior’s Inner Circle archive:</p>
+
+      <div class="describe-groups">
+        <!-- by: @🤰 -->
+        <div class="entry-subcard">
+          <div class="subcard-header">
+            <span class="author-pill">by: @🤰</span>
+          </div>
+          <ol class="numbered-list">
+            <li>sagana sa ppp</li>
+            <li>international researcher</li>
+            <li>paramdam rag friday night sa gc</li>
+            <li>laki</li>
+            <li>bootan sahay</li>
+            <li>gwapo panagsa</li>
+            <li>"tigididing ka run"</li>
+            <li>gymrat</li>
+            <li>"ta coke ta"</li>
+            <li>dugay momata basta sabado</li>
+          </ol>
+        </div>
+
+        <!-- by: @🐶 kang dako bayhana ka -->
+        <div class="entry-subcard">
+          <div class="subcard-header">
+            <span class="author-pill">by: @🐶 kang dako bayhana ka</span>
+          </div>
+          <ol class="numbered-list">
+            <li>masarap</li>
+            <li>magaling</li>
+            <li>maalam</li>
+            <li>may utak</li>
+            <li>may biceps</li>
+            <li>maraming pera</li>
+            <li>mabango</li>
+            <li>malaki</li>
+            <li>makapangyarihan</li>
+            <li>malaya</li>
+          </ol>
+        </div>
+
+        <!-- by: eto sayu 🫰🏻 -->
+        <div class="entry-subcard">
+          <div class="subcard-header">
+            <span class="author-pill">by: eto sayu 🫰🏻</span>
+          </div>
+          <ol class="numbered-list">
+            <li>ppp addict</li>
+            <li>International Researcher</li>
+            <li>“lain man”</li>
+            <li>Big Boy Biceps</li>
+            <li>Dili na virgin</li>
+            <li>“arn naa kay powerbank/charger?”</li>
+            <li>Murag si ZAYN MALIbog kung matulog</li>
+            <li>Sigeg Harley kahibalong ga Estes ta, lisud i-heal</li>
+            <li>Future Dialysis patient nako kay sige man ug coke</li>
+            <li>Mama Enjoyer (Rene fanatics)</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Embedded Section 2: Desert Stuck Scenario -->
+    <section class="card board-card">
+      <h2 class="section-title">🏜️ Desert Survival Scenario</h2>
+      <blockquote class="custom-prompt-quote">
+        “If ma stuck ko sa desert, si <strong>Van Accel</strong> akong gusto maka-uban because…”
+      </blockquote>
+
+      <div class="notes-grid">
+        <div class="note-card">
+          <p class="note-text">"...pakugos rako (puslan man sigeg gym)"</p>
+          <div class="note-footer">— @🤰</div>
+        </div>
+
+        <div class="note-card">
+          <p class="note-text">"...me kasi super fragile, need biceps to lean on if sa desert ko ma stuck"</p>
+          <div class="note-footer">— @🐶 kang dako bayhana ka</div>
+        </div>
+
+        <div class="note-card">
+          <p class="note-text">"...malakas ang kapit niya kay Rene kaya maililigtas niya kami🙏🏻"</p>
+          <div class="note-footer">— eto sayu 🫰🏻</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Made with ❤️ by <strong>Senior’s Inner Circle</strong> • See you this Wednesday at
